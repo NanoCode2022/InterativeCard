@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Interative Card</title>
+</head>
+<body>
+    <div class="container">
+        <div class="mainfront">
+            <div class="frontCard"> 
+                <p class="number">#### #### #### ####</p>
+                <p class="expiration"><span class="month">MM</span>/<span class="year">YY</span></p>
+                <p class="name">NAHUEL GEREZ</p>
+            </div>
+            <div class="backCard">
+                <div class="strip"></div>
+                <div class="containerCvc">
+                    <p class="cvc">123</p>
+                </div>
+            </div>
+        </div>
+      
+        <div class="containerForm">
+            <form action="" id="formulario">
+                <label>Card Number</label>
+                <input type="text" maxlength="19" placeholder="e.g. 0000 0000 0000 0000" id="inputNroCard" class=" input">
+                <label>Card Name</label>
+                <input type="text" placeholder="nombre" id="cardName" class="input">
+                <span>
+                    <label>Exp. Date (MM/YY)</label>
+                    <label style="margin-left: 30px">Cvc</label>
+                </span>
+                <span>
+                    <input type="text" maxlength="2" placeholder="MM" id="cardMonth" class="cardMonth inputDate">
+                    <input type="text" maxlength="2" placeholder="YY" id="cardYear" class="cardYear inputDate">
+                   
+                    <input type="text" maxlength="3" placeholder="e.g 123" id="clave" class="cardCvc">
+                </span>
+                <button id="btnEnviar">Confirm</button>
+               
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
